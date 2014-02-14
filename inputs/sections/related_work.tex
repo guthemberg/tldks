@@ -1,0 +1,51 @@
+\section{Related Work}
+\label{sec:related_work}
+
+Our related work is two-fold: Internet videos and adaptive replication schemes.
+
+\noindent \textbf{Internet videos:} Recent studies
+\cite{youtube_wsdm_2011,popularity_prediction_2010} have drawn
+attention to reach a better understanding of Internet videos
+properties, such as popularity growth. They point out that well-known
+popularity characteristics are applicable to multimedia content. For
+instance, Internet videos popularity distribution follows power law,
+and popularity bursts have a short duration and are quite likely to
+happen just after the content publication. Dobrian \emph{et
+al.}~\cite{Dobrian_sigcomm_2011} shed some light on the performance of
+Internet videos provision on CDNs. They show that average bitrate plays
+an important role in videos availability. A hybrid solution between
+CDNs and P2P is presented by Mansy \emph{et
+al.}~\cite{Mansy_icnp_2011}. Their purpose is to model and analyze a
+live video system and one of their main concerns is to adapt bitrate
+for guarantee user satisfaction. Adhikari \emph{et
+al.}~\cite{Adhikari_infocom_2012} work described the YouTube video
+delivery system through measurements of DNS resolutions and video
+playback traces. One of their findings is that over a globally
+distributed network (PlanetLab) most part of the nodes have a nearby
+Youtube video cache server to delivery the video data.  Moreover,
+Brodersen \emph{et al.}~\cite{Brodersen_www_2012} presented a detailed
+study over the strong connection between popularity and geographic
+locality of Youtube videos. These facts endure our decision of a
+locality aware solution for infrastructure. Liu \emph{et
+al.}~\cite{Liu_sigcomm_2012} make a case for a video control plane
+that can use a global view of client and network conditions to
+dynamically optimize the video delivery in order to provide a high
+quality viewing experience despite an unreliable delivery
+infrastructure. However, the granularity of their server selection
+mechanism is at a CDN, ignoring edge network resources. WiseReplica
+addresses this issue by adapting replication close to the viewers.
+Thus, WiseReplica can be play an important role in collaborating with an
+Internet control plane.
+
+
+\noindent
+\textbf{Adaptive replication schemes:} Non-collaborative caching remains the simplest approach to provide popularity-aware replication of web content through cache replacement policies\cite{popularity_awaregreedydual_size_icdcs99}. However, we showed when we adapt the number of replicas according to the Internet video popularity properly, cache replacement policy becomes redundant. EAD \cite{Haiying_Shen_P2P_2010}
+and Skute \cite{self_tolerant_acm_cloud_2010} adapt the number of replicas by
+using a cost-benefit approach over decentralized and structured P2P
+systems. EAD creates and deletes replicas throughout the query path
+with regard to object hit rate using an exponential moving average
+technique. Similarly, Skute provides a replication management scheme that
+evaluates replicas price and revenue across different geographic
+locations. Despite presenting an
+efficient framework for replication, they provide an inaccurate bitrate provision, hence
+inappropriate for high-quality video delivery. WiseReplica copes with this issue through analysing the request arrival process, performing accurate predictions about the ranking of Internet videos, and maintaining replication degree accordingly.

@@ -1,0 +1,47 @@
+Title: Boosting streaming availability with WiseReplica
+
+WiseReplica works in storage domains and for training we have used bandwidth reservation assumption. 
+
+ICNP REVIEWS 19/07/2013
+
+
+Reviews
+1 Area chair review
+Review 1 (Reviewer D)
+None of the scores are visible in your role.
+1 Meta review
+Review 1 (Reviewer A)
+None of the scores are visible in your role.
+3 Reviews
+Review 1 (Reviewer B)
+Recommendation
+Likely Reject (top 50% but not in top 30%, needs more work) (2)
+
+Strengths (What are the major reasons to accept the paper? [Be brief.])
+    A scheme, referred to as WiseReplica, to rank Internet videos in terms of popularity and replicate them at peer-assisted VoD systems so as to enforce average bit rates.
+Weaknesses (What are the major reasons NOT to accept the paper? [Be brief.])
+    A lot of detail on ranking scheme and little on replication;some assumptions regarding peer-assisted system may not be practical; use of English language needs improvement.
+Detailed Comments (Please provide detailed comments that will help the TPC assess the paper and help provide feedback to the authors.)
+    The WiseReplica system aims to replicate videos on peers based on the videos' popularity. The goal of the system is to use peer resources, rather than caching at the edge, to serve videos so as to meet the SLA goal of minimum bitrate. The paper spends a significant amount of time/effort to describe the method used to determine/predict the popularity of each video despite the fact that well known methods from machine learning are used. Even so, the methods are used to characterize the popularity of a video, whereas the paper also refers to the "hotness" as the criterion they use for replication. While it is mentioned several times that hotness combines popularity and demand/QoS, there is never an explicit definition of hotness hence, it is not clear how this property is derived. There are fewer details on the replication method, other than that the system handles deletions and creations of replicas. But there is no description of how these deletion and creation policies work other than that for non-popular content, one replica is deleted when there is a request (a counter-intuitive policy at that; one would expect copies to be deleted after some elapsed time **without** new requests). The constant B used in the replication policy is unclear and not well explained, hence I am not sure what to make of the results in Table III. The paper makes at least two assumptions that are not realistic in today's or near future's VoD systems. First, it assumes that peers have 100 Mbps of full-duplex bandwidth available all the time. Second, it assumes that peers use 200 GB of storage for replicating videos for uploading to other users. These assumptions are very problematic for various reasons. First, users would not be willing to serve other users unless there are incentives and current service agreements do not include such. Second, providers may not rely on users being online all the time (what if they turn off their equipment, which happens frequently) or have the full bandwidth available (even if 100 Mbps rates are ubiquitous, which are not). Third, users may populate their drives with their own content, leaving little space for replicas. And finally, having servers in the cloud directly control user equipment opens up major security issues. There are many typos and malformed sentences throughout the text. The use of the English language must be improved significantly for publication.
+
+Review 2 (Reviewer A)
+Recommendation
+Definite Reject (bottom 50%, not up to ICNP standard) (1)
+
+Strengths (What are the major reasons to accept the paper? [Be brief.])
+    This paper proposes a system called WiseReplica. At the heart of the system is a machine learning process that uses request logs for video streams to learn what videos are "hot" and need to be cached more aggressively. WiseReplica is designed for a P2P VOD caching system, where end nodes (such as in your home) participate in the caching scheme, and are coordinated remotely from datacenters running controllers. ++ Edge caching is an important and interesting growth area for video delivery
+Weaknesses (What are the major reasons NOT to accept the paper? [Be brief.])
+    -- learning is done offline, and in the evaluation it is unclear in practice how quickly WiseReplica will determine that a video is hot, and in that duration how many requests will not be answered from the local cache. -- throughput assumptions of end nodes are unrealistic -- paper is not using actual request patterns, but generated traces. unclear how well this will work in practice -- paper is hard to comprehend
+Detailed Comments (Please provide detailed comments that will help the TPC assess the paper and help provide feedback to the authors.)
+    The paper is using synthetic traces that are generated from a workload generator, whose parameters are described in Table II. Worse, the paper has cut off unpopular videos from this trace. Hence I don't really know how well WiseReplica will work in practice. The paper assumes that end nodes in homes will have 100mbps uplink and 100mbps downlink. Many home connections have asymmetric capacity, where the uplink has severely less throughput. This can have major implications for whether a P2P VOD system is feasible. The paper is also not very clear in comparing this to the traditional model. What is specifically broken about the traditional model that is fixed here? The paper alludes to it, but does not evaluate the system to a large scale internet model such as with an Akamai deployment. The paper is written poorly, with many grammar mistakes and even spelling mistakes. YouTube is misspelled many times in the paper. The evaluation is very hard to comprehend. The paper does not quantify many design points -- how close are the peers? how close are the nearby datacenters to the peers? How does the learning model react quickly if it is an offline learning model?
+
+Review 3 (Reviewer C)
+Recommendation
+Accept if room (top 30% but not top 15%, borderline for ICNP) (3)
+
+Strengths (What are the major reasons to accept the paper? [Be brief.])
+    The paper addresses the timely and relevant problem of content providers being able to satisfy video on demand customers with improved average bit rate to customers via machine learning which determines a video's "hotness" and replicates the video accordingly. It has a thorough setup of the problem, a good presentation/motivation of the issues, a nice idea proposed, good evaluation, and ultimately good performance.
+Weaknesses (What are the major reasons NOT to accept the paper? [Be brief.])
+    It is unclear exactly what the authors mean by "hotness." Also, there are some ill-formed assumptions (e.g., symmetric and high bandwidths to the home). There are minor grammatical mistakes, but overall this is a well-written, well-organized paper.
+Detailed Comments (Please provide detailed comments that will help the TPC assess the paper and help provide feedback to the authors.)
+    There are two key intellectual contributions to the work: 1. Predicting the hotness of a video through machine learning. 2. Enforcing average bit rate through SLA-based video replication. The evaluation is performed with a simulation tool on top of PeerSim. The performance of the scheme approaches an optimal scheme they call "Oracle-like" with the cost of more storage. However, there is a tremendous savings in terms of performance and storage compared to the typical caching schemes. The authors should state in a rigorous manner what is meant by hotness. More practical bandwidth settings should be used in the simulator. Many minor grammatical mistakes: In general there are problems that could frequently be solved with either the use of articles, plurals, or possives that manifests itself throughout the text. Here are some examples. 1. Abstract - "As broadcasting future" -> "As broadcasting's future" 2. Intro a. "This contributes to increase the" -> "This contributes to an increase in the" b. "latency as QoS" -> "latency as a QoS" c. "exploring peer-assisted" -> "exploring a peer-assisted" d. "one of such challenges" -> "one such challenge" e. "the better is the resource allocation" -> "the better the resource allocation" f. "as target QoS" -> "as the target QoS" g. "peer-assisted VoD system properly" -> "peer-assisted VoD systems properly"

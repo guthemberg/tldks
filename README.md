@@ -8,4 +8,8 @@ Notification: July 20th, 2014
 
 Note: The length of submitted manuscripts should not exceed 30 pages.
 
-Rgistration: http://confdriver.ifs.tuwien.ac.at/tldks 
+Registration: http://confdriver.ifs.tuwien.ac.at/tldks 
+
+Other links: 
+http://tldks.faw.at
+http://www.springer.com/series/8637

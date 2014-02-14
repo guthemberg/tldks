@@ -1,0 +1,112 @@
+\section{Context and Challenges}
+\label{sec:context}
+
+% In this section, we discuss the role of adaptive replication schemes for content distribution. We present our workload with popularity growth curves from real YouTube traces, measurements, and datasets.
+
+In this section, we describe the context and the challenges of this
+work.
+
+%\subsection{Towards Content Availability Optimization Targeting Better 
+%\subsection{Towards Better Content Availability to Enhance 
+\subsection{Improving Content Availability to Better
+User Experience}
+
+Many studies have shown that quality of user experience while watching
+online videos is related to the good quality of content transmission.
+Still being an open issue, the community presented many strategies to
+cope with the video content availability and its distribution.  The
+majority of the studies in the field are focused on Youtube, being
+this the major player of video content
+distribution~\cite{youtube_wsdm_2011, Adhikari_infocom_2012,
+Brodersen_www_2012, Braun_noms_2012}. These studies vary
+from analyzes of crawled data from Youtube APIs to comparisons of
+caching strategies from collected data of users' point of view (HTTP
+logs from ISP or local networks).
+
+Dobrian \emph{et al.}~\cite{Dobrian_sigcomm_2011} study have shown the
+correlation between the user engagement and the video quality, being
+the \emph{Buffering Ratio} (fraction of the total session time spent
+in buffering) and \emph{Rendering Rate} (frames per second) the most
+critical metric over the total played time for short videos, the
+current target of our method. This characterizes the relation between
+quality of service and user experience and endures the importance of
+avoidance of SLAs violations, which minimizes buffering ratio,
+confirming the main metric of  evaluation in our work. 
+
+Furthermore,  Finamore \emph{et al.}~\cite{Finamore_imc_2011} stated
+that download  bitrate of the video has a fundamental role in video
+playback quality.  They measured the smoothness of the playback by the
+bitrate ratio,  defined as the ratio between the average session
+download bitrate and  the video encoding bitrate. The consideration of
+different bitrates  in the dataset used as input for our method agrees
+with the importance  of the rendering rate metric in user engagement 
+and playback quality.
+
+Another important concern in this work was to provide a SLA-based solution with
+the minimum constrains regarding deployment. Recent studies\cite{d3_sigcomm2011, dctcp_sigcomm_2010} presented
+are based in substantial changes in the normally used stack of
+protocols and network infra-structure and they become hard to be
+considered as a feasible solution. Our solution takes in account a
+well-know and largely used infra-structure and have no changes in the
+stack protocol.
+
+\subsection{On the Track of YouTube Popularity Growth Curves and High Quality Videos}
+\label{subsec:motivation_youtube_traces}
+
+A fair reproduction of user interactions to Internet videos is essential to evaluate peer-assisted VoD systems properly. Hence, we study in this work a workload that combines YouTube traces\cite{youtube_wsdm_2011} to well-known videos{'} access patterns \cite{popularity_prediction_2010}. We are particularly interested in reproducing realistic popularity growth curves, considering advanced coding setting and common VoD demand patterns.
+
+Figueiredo \emph{et al.} \cite{youtube_wsdm_2011} collected and characterized the growth patterns of YouTube videos, whose datasets are currently available online \footnote{The Tube over Time: Characterizing Popularity Growth of YouTube Videos. http://www.vod.dcc.ufmg.br/traces/youtime/data/, January 2013.}. They analysed three types of YouTube videos sets: videos that appear on YouTube top list, videos that were banned from YouTube due to copyrights violations, and videos that were randomly selected through API calls. They crawled once a number of videos' daily features. For each video, there are up to 100 daily measurements, or daily available samples, per feature. In this work, we are mostly interested in the measurements of \emph{view data} feature, that depicts the popularity growth curve of a video through a array of cumulative number of daily views ranging from 0 to the total number of views.
+
+In order to reproduce realistic, high quality videos encodings, we consider the YouTuve advanced encoding settings\footnote{Advanced encoding settings for YouTube videos. http://support.google.com/youtube/bin/answer.py?hl=en-GB\&answer=1722171, March 2013.}. Table~\ref{tab:youtube_encodings} depicts the set of high definition (HD) video encodings that we use in this work. 
+
+\begin{table}
+  \label{tab:motivation_advanced_encodings}
+	\begin{center}
+		\caption{Advanced encoding settings for YouTube videos used in this work.}
+  		\label{tab:youtube_encodings}
+		\begin{tabular}{p{1.1cm}||p{1.7cm} p{2.5cm} p{2.5cm} p{2cm}}
+		%\begin{tabular}{r||r r r r}
+			{\bf Type}&{\bf Video}&{\bf Mono Audio}&{\bf Stereo Audio}&{\bf 5.1 Audio}\\
+			&{\bf Bitrate}&{\bf Bitrate}&{\bf Bitrate}&{\bf Bitrate}\\
+			\hline
+			\hline
+			1080p&50 Mbps&128 kbps&384 kbps&512 kbps\\
+			720p&30 Mbps&128 kbps&384 kbps&512 kbps\\
+			480p&15 Mbps&128 kbps&384 kbps&512 kbps\\
+			360p&5 Mbps&128 kbps&384 kbps&512 kbps\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\subsection{Investigating Network Resources Provision for Internet Videos}
+
+%to include here 
+%Broadly speaking, deadline-aware protocols provide mechanism for preventing SLA violations by ensuring the minimum bitrate for any transfer. Although deadline-aware protocols are very efficient to tackle this problem, it requires changes on network stack. This is a major issue for CDN providers, particularly on edge networks. D3~\cite{d3_sigcomm2011}
+
+
+Replication schemes have become an important building block for Internet video providers to improve content availability and meet consumers' expectations. 
+%Content delivery network (CDN) providers have adopted hybrid design, where edge network resources, such as home gateways, have been seen as first-class devices for highly available content. In this scenario, 
+%Replication scheme must adapt the resource allocation according to the popularity of contents. 
+An adaptive replication scheme should offer content replica maintenance to handle popularity growth properly.
+
+Non-collaborative caching remains the simplest approach to provide adaptive replication of web content\cite{popularity_awaregreedydual_size_icdcs99}. They adapt the replication degree to the content popularity using cache replacement policies, and assuming fair-sharing as a key scheduling strategy. But, Internet videos' workloads on peer-assisted VoD systems bring major obstacles to non-collaborative caching, e.g. the resource imbalance in peers for replicas, and a growing need for high bitrate provision for meeting consumers' expectations. Therefore, relying just on cache replacement policies and fair-sharing scheduling can undermine the performance of the whole system.
+
+Recent studies have sought an optimal solution to this problem. For instance, Chang and Pan
+\cite{pavod_icnp12} propose a modelling framework towards optimal caching strategies, including collaborative caching. They confirm that this problem is NP-hard, and only suboptimal solutions can be found.
+
+%We achieve these results by applying a simple mechanism of popularity classification and content replication based on a couple of thresholds. Broadly speaking, whenever a request to a video is sent to the system, AREN (i) tracks the minimum amount of required bandwidth as additional load, (ii) checks bandwidth threshold for the requested video, then (iii) it takes a decision in terms replication, and, finally, (iv) it tries to server the request doing reservation. Decisions taken on step (iii) are based on threshold. If the current load of a video for the system is greater than the high bandwidth threshold, replication degree must be increased by keeping the latest request as a new replica. Otherwise, the replication scheme can either indicate that replication degree must be kept unchanged for loads in between thresholds, or system must decrease the replication degree for loads smaller than the low bandwidth load. In addition, threshold are dynamically redefined by a linear relation between then number of current replicas and the total bandwidth available on nodes.
+
+
+\subsection{Challenges}
+
+%highlight challenges here
+In order to meet increasing consumers' expectations on Internet videos, a \emph{good} peer-assisted VoD system must overcome the following challenges:
+\begin{enumerate}
+		\item  It must cope with dramatic, unexpected variations in videos popularity.
+		\item  It must avoid waste of resources, and reduce as much as possible storage and network usage on peers of edge networks.
+		\item  It must prevent rebuffering of VoD streaming through a self-adaptive, easy-to-deploy technique.
+\end{enumerate}
+
+Our simulations suggest that meeting consumers' expectations in terms of average bitrate is a difficult task, specially under heavy load. State-of-the-art approaches fail to handle these challenges mostly because they are not able (i) to capture VoD demand, and (ii) to define a metric to measure consumers' expectations. WiseReplica copes with these issues by inferring users' expectations for videos and prediction the amount of resources to fulfil the demand in a self-adaptive way. Our finds show that this approach produces a good balance between resource allocation and users' satisfaction.
+
+%current approaches particularly fail in addressing properlly two main issues: how to capture Internet videos hotness accurately and provide resource allocation schemes accordingly.

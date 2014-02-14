@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="395.375"
+   height="139.96875"
+   id="svg7651"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="wisereplica_scheme.pdf">
+  <defs
+     id="defs7653" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="197.6875"
+     inkscape:cy="69.981567"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="472"
+     inkscape:window-height="415"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7656">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-177.3125,-462.375)">
+    <rect
+       style="fill:none;stroke:#d5cbc0;stroke-width:1.24500155;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3.73500505, 3.73500505;stroke-dashoffset:0"
+       id="rect4373-1-9-8-9-7-0-6-9"
+       width="138.70665"
+       height="193.755"
+       x="462.99088"
+       y="-371.69794"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.97021294px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#868483;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="213.95593"
+       y="480.26419"
+       id="text4017-1-4-9-22-6-2-2-8-6-0-1-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"><tspan
+         sodipodi:role="line"
+         x="213.95593"
+         y="480.26419"
+         style="font-size:14px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan5734-1">Learning</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#d5cbc0;fill-opacity:1;stroke:#8c8073;stroke-opacity:1"
+       id="path3042-5-9-5-0-1"
+       sodipodi:cx="257.39407"
+       sodipodi:cy="356.39178"
+       sodipodi:rx="39.138634"
+       sodipodi:ry="12.892726"
+       d="m 296.53271,356.39178 c 0,7.12046 -17.52297,12.89273 -39.13864,12.89273 -21.61567,0 -39.13863,-5.77227 -39.13863,-12.89273 0,-7.12045 17.52296,-12.89272 39.13863,-12.89272 21.61567,0 39.13864,5.77227 39.13864,12.89272 z"
+       transform="matrix(0.2944731,0,0,0.26546692,138.19733,474.53358)"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/arch.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291" />
+    <rect
+       style="fill:#d5cbc0;fill-opacity:1;stroke:none"
+       id="rect3044-4-7-9-6-2"
+       width="22.779366"
+       height="18.090843"
+       x="202.60736"
+       y="551.48035"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/arch.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#d5cbc0;fill-opacity:1;stroke:#8c8073;stroke-opacity:1"
+       id="path3042-0-2-1-6-0-76"
+       sodipodi:cx="257.39407"
+       sodipodi:cy="356.39178"
+       sodipodi:rx="39.138634"
+       sodipodi:ry="12.892726"
+       d="m 296.53271,356.39178 c 0,7.12046 -17.52297,12.89273 -39.13864,12.89273 -21.61567,0 -39.13863,-5.77227 -39.13863,-12.89273 0,-7.12045 17.52296,-12.89272 39.13863,-12.89272 21.61567,0 39.13864,5.77227 39.13864,12.89272 z"
+       transform="matrix(0.2944731,0,0,0.26546692,138.20148,455.97628)"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/arch.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.97021294px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#5a534c;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="214.3869"
+       y="583.95813"
+       id="text4017-1-4-9-22-6-2-2-8-6-0-1-7-7-8-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"><tspan
+         sodipodi:role="line"
+         x="214.3869"
+         y="583.95813"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan5746-6">YouTube</tspan><tspan
+         sodipodi:role="line"
+         x="214.3869"
+         y="598.95813"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan5809">workload 1</tspan></text>
+    <g
+       id="g8139"
+       transform="matrix(0.70713613,0,0,0.70713613,-205.16099,-632.72243)"
+       style="fill:#6c5d53">
+      <rect
+         y="1647.1558"
+         x="587.57477"
+         height="17.398859"
+         width="9.1239491"
+         id="rect8131"
+         style="fill:#6c5d53;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="rect8136"
+         d="m 592.17307,1638.4545 9.85593,9.8559 -9.53177,0.1315 -10.18012,-0.1315 z"
+         style="fill:#6c5d53;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+    <rect
+       style="fill:#80b3ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3974-2-7-9-0"
+       width="36.503178"
+       height="25.874256"
+       x="195.41138"
+       y="497.8616" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.72866774px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="222.66991"
+       y="493.38229"
+       id="text4017-1-4-3-4-1-9-5-7-9-2-1-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"
+       transform="scale(0.95877304,1.0429997)"><tspan
+         sodipodi:role="line"
+         x="222.66991"
+         y="493.38229"
+         style="font-size:10px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1"
+         id="tspan5282-6-1-6-1">Oracle</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#80b1f9;fill-opacity:1;stroke:#447ed8;stroke-opacity:1"
+       id="path3042-5-9-5-0-1-4"
+       sodipodi:cx="257.39407"
+       sodipodi:cy="356.39178"
+       sodipodi:rx="39.138634"
+       sodipodi:ry="12.892726"
+       d="m 296.53271,356.39178 c 0,7.12046 -17.52297,12.89273 -39.13864,12.89273 -21.61567,0 -39.13863,-5.77227 -39.13863,-12.89273 0,-7.12045 17.52296,-12.89272 39.13863,-12.89272 21.61567,0 39.13864,5.77227 39.13864,12.89272 z"
+       transform="matrix(0.2944731,0,0,0.26546692,188.92799,425.51388)"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/arch.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291" />
+    <rect
+       style="fill:#80b1f9;fill-opacity:1;stroke:none"
+       id="rect3044-4-7-9-6-2-8"
+       width="22.779366"
+       height="18.090843"
+       x="253.33801"
+       y="502.46072"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/arch.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#80b1f9;fill-opacity:1;stroke:#447ed8;stroke-opacity:1"
+       id="path3042-0-2-1-6-0-76-2"
+       sodipodi:cx="257.39407"
+       sodipodi:cy="356.39178"
+       sodipodi:rx="39.138634"
+       sodipodi:ry="12.892726"
+       d="m 296.53271,356.39178 c 0,7.12046 -17.52297,12.89273 -39.13864,12.89273 -21.61567,0 -39.13863,-5.77227 -39.13863,-12.89273 0,-7.12045 17.52296,-12.89272 39.13863,-12.89272 21.61567,0 39.13864,5.77227 39.13864,12.89272 z"
+       transform="matrix(0.2944731,0,0,0.26546692,188.93214,406.95658)"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/arch.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291" />
+    <g
+       id="g8139-7-9"
+       transform="matrix(0,0.70713613,-0.70713613,0,1410.2523,91.627782)"
+       style="fill:#6c5d53">
+      <rect
+         y="1647.1558"
+         x="587.57477"
+         height="17.398859"
+         width="9.1239491"
+         id="rect8131-9-9"
+         style="fill:#6c5d53;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="rect8136-5-7"
+         d="m 592.17307,1638.4545 9.85593,9.8559 -9.53177,0.1315 -10.18012,-0.1315 z"
+         style="fill:#6c5d53;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:7.97021294px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#5a534c;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="264.51965"
+       y="535.44983"
+       id="text4017-1-4-9-22-6-2-2-8-6-0-1-7-7-8-7-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"><tspan
+         sodipodi:role="line"
+         x="264.51965"
+         y="535.44983"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan5746-6-5">training</tspan><tspan
+         sodipodi:role="line"
+         x="264.51965"
+         y="550.44983"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan5809-6">dataset</tspan></text>
+    <rect
+       style="fill:#37c871;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3974-2-7-9-0-6"
+       width="61.249886"
+       height="25.874256"
+       x="297.12335"
+       y="497.57559" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.72866774px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="341.66086"
+       y="493.108"
+       id="text4017-1-4-3-4-1-9-5-7-9-2-1-5-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"
+       transform="scale(0.95877304,1.0429997)"><tspan
+         sodipodi:role="line"
+         x="341.66086"
+         y="493.108"
+         style="font-size:10px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1"
+         id="tspan5282-6-1-6-1-0">WiseReplica</tspan></text>
+    <g
+       id="g8139-7-9-1"
+       transform="matrix(0,0.70713613,-0.70713613,0,1454.3071,91.627782)"
+       style="fill:#6c5d53">
+      <rect
+         y="1647.1558"
+         x="587.57477"
+         height="17.398859"
+         width="9.1239491"
+         id="rect8131-9-9-0"
+         style="fill:#6c5d53;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="rect8136-5-7-6"
+         d="m 592.17307,1638.4545 9.85593,9.8559 -9.53177,0.1315 -10.18012,-0.1315 z"
+         style="fill:#6c5d53;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:7.97021294px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#5a534c;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="326.54578"
+       y="535.78247"
+       id="text4017-1-4-9-22-6-2-2-8-6-0-1-7-7-8-7-6-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"><tspan
+         sodipodi:role="line"
+         x="326.54578"
+         y="535.78247"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan5809-6-5">learn</tspan></text>
+    <rect
+       style="fill:none;stroke:#d5cbc0;stroke-width:1.24500966;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:3.73502891, 3.73502891;stroke-dashoffset:0"
+       id="rect4373-1-9-8-9-7-0-6-9-59"
+       width="138.70844"
+       height="193.75499"
+       x="463.02505"
+       y="-572.05707"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <g
+       id="g9337"
+       transform="matrix(0.89360067,0,0,1,-277.11938,-1010.0179)">
+      <rect
+         transform="matrix(0,1,-1,0,0,0)"
+         y="-741.59784"
+         x="1517.1411"
+         height="29.240152"
+         width="6.4518743"
+         id="rect8131-9-2-8"
+         style="fill:#6c5d53;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="rect8136-5-5-7"
+         d="m 747.7508,1520.3927 -6.9694,6.9695 -0.093,-6.7403 0.093,-7.1987 z"
+         style="fill:#6c5d53;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:7.97021294px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#868483;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="417.65723"
+       y="480.32657"
+       id="text4017-1-4-9-22-6-2-2-8-6-0-1-7-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"><tspan
+         sodipodi:role="line"
+         x="417.65723"
+         y="480.32657"
+         style="font-size:14px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan5734-1-8">Predicting</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#37c871;fill-opacity:1;stroke:#14753b;stroke-opacity:1"
+       id="path3042-5-9-5-0-1-4-4"
+       sodipodi:cx="257.39407"
+       sodipodi:cy="356.39178"
+       sodipodi:rx="39.138634"
+       sodipodi:ry="12.892726"
+       d="m 296.53271,356.39178 c 0,7.12046 -17.52297,12.89273 -39.13864,12.89273 -21.61567,0 -39.13863,-5.77227 -39.13863,-12.89273 0,-7.12045 17.52296,-12.89272 39.13863,-12.89272 21.61567,0 39.13864,5.77227 39.13864,12.89272 z"
+       transform="matrix(0.2944731,0,0,0.26546692,328.07391,426.47308)"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/arch.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291" />
+    <rect
+       style="fill:#37c871;fill-opacity:1;stroke:none"
+       id="rect3044-4-7-9-6-2-8-8"
+       width="22.779366"
+       height="18.090843"
+       x="392.48395"
+       y="503.41983"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/arch.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#37c871;fill-opacity:1;stroke:#14753b;stroke-opacity:1"
+       id="path3042-0-2-1-6-0-76-2-2"
+       sodipodi:cx="257.39407"
+       sodipodi:cy="356.39178"
+       sodipodi:rx="39.138634"
+       sodipodi:ry="12.892726"
+       d="m 296.53271,356.39178 c 0,7.12046 -17.52297,12.89273 -39.13864,12.89273 -21.61567,0 -39.13863,-5.77227 -39.13863,-12.89273 0,-7.12045 17.52296,-12.89272 39.13863,-12.89272 21.61567,0 39.13864,5.77227 39.13864,12.89272 z"
+       transform="matrix(0.2944731,0,0,0.26546692,328.07806,407.91578)"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/arch.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.97021294px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#5a534c;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="405.66559"
+       y="536.40894"
+       id="text4017-1-4-9-22-6-2-2-8-6-0-1-7-7-8-7-6-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"><tspan
+         sodipodi:role="line"
+         x="405.66559"
+         y="536.40894"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan5746-6-5-00">YouTube</tspan><tspan
+         sodipodi:role="line"
+         x="405.66559"
+         y="551.40894"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan5809-6-6">patterns</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="281.68707"
+       y="580.52466"
+       id="text8526"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8528"
+         x="281.68707"
+         y="580.52466"> </tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#d5cbc0;fill-opacity:1;stroke:#8c8073;stroke-opacity:1"
+       id="path3042-5-9-5-0-1-5"
+       sodipodi:cx="257.39407"
+       sodipodi:cy="356.39178"
+       sodipodi:rx="39.138634"
+       sodipodi:ry="12.892726"
+       d="m 296.53271,356.39178 c 0,7.12046 -17.52297,12.89273 -39.13864,12.89273 -21.61567,0 -39.13863,-5.77227 -39.13863,-12.89273 0,-7.12045 17.52296,-12.89272 39.13863,-12.89272 21.61567,0 39.13864,5.77227 39.13864,12.89272 z"
+       transform="matrix(0.2944731,0,0,0.26546692,390.12604,474.10398)"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/arch.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291" />
+    <rect
+       style="fill:#d5cbc0;fill-opacity:1;stroke:none"
+       id="rect3044-4-7-9-6-2-5"
+       width="22.779366"
+       height="18.090843"
+       x="454.53607"
+       y="551.05078"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/arch.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#d5cbc0;fill-opacity:1;stroke:#8c8073;stroke-opacity:1"
+       id="path3042-0-2-1-6-0-76-1"
+       sodipodi:cx="257.39407"
+       sodipodi:cy="356.39178"
+       sodipodi:rx="39.138634"
+       sodipodi:ry="12.892726"
+       d="m 296.53271,356.39178 c 0,7.12046 -17.52297,12.89273 -39.13864,12.89273 -21.61567,0 -39.13863,-5.77227 -39.13863,-12.89273 0,-7.12045 17.52296,-12.89272 39.13863,-12.89272 21.61567,0 39.13864,5.77227 39.13864,12.89272 z"
+       transform="matrix(0.2944731,0,0,0.26546692,390.13019,455.54668)"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/arch.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.97021294px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#5a534c;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="466.31561"
+       y="583.52856"
+       id="text4017-1-4-9-22-6-2-2-8-6-0-1-7-7-8-7-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"><tspan
+         sodipodi:role="line"
+         x="466.31561"
+         y="583.52856"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan5746-6-1">YouTube</tspan><tspan
+         sodipodi:role="line"
+         x="466.31561"
+         y="598.52856"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan5809-4">workload 2</tspan></text>
+    <g
+       id="g8139-4"
+       transform="matrix(0.70713613,0,0,0.70713613,47.220293,-632.72243)"
+       style="fill:#6c5d53">
+      <rect
+         y="1647.1558"
+         x="587.57477"
+         height="17.398859"
+         width="9.1239491"
+         id="rect8131-5"
+         style="fill:#6c5d53;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="rect8136-3"
+         d="m 592.17307,1638.4545 9.85593,9.8559 -9.53177,0.1315 -10.18012,-0.1315 z"
+         style="fill:#6c5d53;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+    <g
+       id="g8139-7-9-1-2"
+       transform="matrix(0,0.70713613,-0.70713613,0,1593.6346,91.627782)"
+       style="fill:#6c5d53">
+      <rect
+         y="1647.1558"
+         x="587.57477"
+         height="17.398859"
+         width="9.1239491"
+         id="rect8131-9-9-0-0"
+         style="fill:#6c5d53;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="rect8136-5-7-6-7"
+         d="m 592.17307,1638.4545 9.85593,9.8559 -9.53177,0.1315 -10.18012,-0.1315 z"
+         style="fill:#6c5d53;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:7.97021294px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#5a534c;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="466.23657"
+       y="494.44656"
+       id="text4017-1-4-9-22-6-2-2-8-6-0-1-7-7-8-7-6-4-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"><tspan
+         sodipodi:role="line"
+         x="466.23657"
+         y="494.44656"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan5809-6-5-1">ranking</tspan></text>
+    <g
+       id="g9341"
+       transform="matrix(0.66322592,0,0,1,-58.969367,-1009.4194)">
+      <rect
+         transform="matrix(0,1,-1,0,0,0)"
+         y="-886.44141"
+         x="1517.1411"
+         height="44.475166"
+         width="6.4518743"
+         id="rect8131-9-2-8-7"
+         style="fill:#37c871;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="rect8136-5-5-7-8"
+         d="m 893.0839,1520.3927 -6.9694,6.9695 -0.093,-6.7403 0.093,-7.1987 z"
+         style="fill:#37c871;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:7.97021294px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#5a534c;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="526.63031"
+       y="479.44656"
+       id="text4017-1-4-9-22-6-2-2-8-6-0-1-7-7-8-7-6-4-9-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"><tspan
+         sodipodi:role="line"
+         x="526.63031"
+         y="479.44656"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#37c871;fill-opacity:1"
+         id="tspan5809-6-5-1-7">self-adapt</tspan><tspan
+         sodipodi:role="line"
+         x="526.63031"
+         y="494.44656"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#37c871;fill-opacity:1"
+         id="tspan9325">replication</tspan></text>
+    <rect
+       style="fill:#37c871;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3974-2-7-9-0-6-5"
+       width="61.249886"
+       height="25.874256"
+       x="436.48242"
+       y="497.64224" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.72866774px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="487.01236"
+       y="493.17197"
+       id="text4017-1-4-3-4-1-9-5-7-9-2-1-5-5-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"
+       transform="scale(0.95877304,1.0429997)"><tspan
+         sodipodi:role="line"
+         x="487.01236"
+         y="493.17197"
+         style="font-size:10px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1"
+         id="tspan5282-6-1-6-1-0-6">WiseReplica</tspan></text>
+    <g
+       id="g7455"
+       transform="matrix(0.31759496,0,0,0.31759496,213.52634,2.9046824)">
+      <g
+         transform="matrix(1.25,0,0,-1.25,185.27172,2210.8595)"
+         id="g11753">
+        <g
+           transform="matrix(0.89344694,0,0,0.89344694,690.27017,493.10266)"
+           id="g8174"
+           style="fill:#00aad4">
+          <path
+             inkscape:connector-curvature="0"
+             id="path8176"
+             style="fill:#00aad4;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 0,0 c 0,-1.539 -1.262,-2.787 -2.815,-2.787 l -24.358,0 c -1.554,0 -2.815,1.248 -2.815,2.787 l 0,2.126 c 0,1.539 1.261,2.787 2.815,2.787 l 24.358,0 C -1.262,4.913 0,3.665 0,2.126 L 0,0 z" />
+        </g>
+        <g
+           transform="matrix(0.89344694,0,0,0.89344694,690.27017,483.14126)"
+           id="g8178"
+           style="fill:#00aad4">
+          <path
+             inkscape:connector-curvature="0"
+             id="path8180"
+             style="fill:#00aad4;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 0,0 c 0,-1.54 -1.262,-2.788 -2.815,-2.788 l -24.358,0 c -1.554,0 -2.815,1.248 -2.815,2.788 l 0,2.125 c 0,1.54 1.261,2.788 2.815,2.788 l 24.358,0 C -1.262,4.913 0,3.665 0,2.125 L 0,0 z" />
+        </g>
+        <g
+           transform="matrix(0.89344694,0,0,0.89344694,690.27017,473.17897)"
+           id="g8182"
+           style="fill:#00aad4">
+          <path
+             inkscape:connector-curvature="0"
+             id="path8184"
+             style="fill:#00aad4;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 0,0 c 0,-1.539 -1.262,-2.787 -2.815,-2.787 l -24.358,0 c -1.554,0 -2.815,1.248 -2.815,2.787 l 0,2.126 c 0,1.539 1.261,2.787 2.815,2.787 l 24.358,0 C -1.262,4.913 0,3.665 0,2.126 L 0,0 z" />
+        </g>
+      </g>
+      <g
+         transform="matrix(1.0386684,0,0,-1.0386684,417.5241,1915.8317)"
+         id="g11694">
+        <g
+           id="g5260-1-8"
+           transform="matrix(1.3230557,0,0,0.68205399,557.12562,245.36945)">
+          <path
+             d="m 0,0 c 0,-0.676 -0.549,-1.223 -1.223,-1.223 l -23.971,0 c -0.675,0 -1.224,0.547 -1.224,1.223 l 0,13.209 c 0,0.675 0.549,1.223 1.224,1.223 l 23.971,0 C -0.549,14.432 0,13.884 0,13.209 L 0,0 z"
+             style="fill:#45f12c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path5262-3-1"
+             inkscape:connector-curvature="0" />
+        </g>
+        <path
+           d="m 551.86377,249.18784 -2.88177,2.34039 -2.88119,-2.34039 0,15.8379 c 0,0.81553 0.66085,1.47696 1.4758,1.47696 l 2.81078,0 c 0.81495,0 1.47638,-0.66143 1.47638,-1.47696 l 0,-15.8379 z"
+           style="fill:#45f12c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path8064-3-2"
+           inkscape:connector-curvature="0" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path7068-6-3"
+           style="fill:none;stroke:#45f12c;stroke-width:3.46297145;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           d="m 558.24141,273.95063 c -5.02766,5.20716 -13.31051,5.35145 -18.51824,0.32322" />
+        <path
+           d="m 555.63627,268.78891 c -3.62919,3.75905 -9.60859,3.86294 -13.36822,0.23317"
+           style="fill:none;stroke:#45f12c;stroke-width:3.46297145;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path7072-0-3"
+           inkscape:connector-curvature="0" />
+        <g
+           style="fill:#45f12c;fill-opacity:1"
+           id="g7074-7-5"
+           transform="matrix(0.72271833,0,0,0.70559411,552.91074,264.04457)">
+          <path
+             d="m 0,0 c 0,-3.121 -2.531,-5.651 -5.65,-5.651 -3.121,0 -5.651,2.53 -5.651,5.651 0,3.121 2.53,5.65 5.651,5.65 C -2.531,5.65 0,3.121 0,0"
+             style="fill:#45f12c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path7076-8-8"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+      <g
+         transform="matrix(1.0386684,0,0,-1.0386684,468.65144,1941.59)"
+         id="g11694-5">
+        <g
+           id="g5260-1-8-6"
+           transform="matrix(1.3230557,0,0,0.68205399,557.12562,245.36945)">
+          <path
+             d="m 0,0 c 0,-0.676 -0.549,-1.223 -1.223,-1.223 l -23.971,0 c -0.675,0 -1.224,0.547 -1.224,1.223 l 0,13.209 c 0,0.675 0.549,1.223 1.224,1.223 l 23.971,0 C -0.549,14.432 0,13.884 0,13.209 L 0,0 z"
+             style="fill:#45f12c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path5262-3-1-0"
+             inkscape:connector-curvature="0" />
+        </g>
+        <path
+           d="m 551.86377,249.18784 -2.88177,2.34039 -2.88119,-2.34039 0,15.8379 c 0,0.81553 0.66085,1.47696 1.4758,1.47696 l 2.81078,0 c 0.81495,0 1.47638,-0.66143 1.47638,-1.47696 l 0,-15.8379 z"
+           style="fill:#45f12c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path8064-3-2-7"
+           inkscape:connector-curvature="0" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path7068-6-3-9"
+           style="fill:none;stroke:#45f12c;stroke-width:3.46297145;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           d="m 558.24141,273.95063 c -5.02766,5.20716 -13.31051,5.35145 -18.51824,0.32322" />
+        <path
+           d="m 555.63627,268.78891 c -3.62919,3.75905 -9.60859,3.86294 -13.36822,0.23317"
+           style="fill:none;stroke:#45f12c;stroke-width:3.46297145;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path7072-0-3-4"
+           inkscape:connector-curvature="0" />
+        <g
+           style="fill:#45f12c;fill-opacity:1"
+           id="g7074-7-5-2"
+           transform="matrix(0.72271833,0,0,0.70559411,552.91074,264.04457)">
+          <path
+             d="m 0,0 c 0,-3.121 -2.531,-5.651 -5.65,-5.651 -3.121,0 -5.651,2.53 -5.651,5.651 0,3.121 2.53,5.65 5.651,5.65 C -2.531,5.65 0,3.121 0,0"
+             style="fill:#45f12c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path7076-8-8-0"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+      <g
+         transform="matrix(1.0386684,0,0,-1.0386684,518.8358,1913.9737)"
+         id="g11694-5-6">
+        <g
+           id="g5260-1-8-6-0"
+           transform="matrix(1.3230557,0,0,0.68205399,557.12562,245.36945)">
+          <path
+             d="m 0,0 c 0,-0.676 -0.549,-1.223 -1.223,-1.223 l -23.971,0 c -0.675,0 -1.224,0.547 -1.224,1.223 l 0,13.209 c 0,0.675 0.549,1.223 1.224,1.223 l 23.971,0 C -0.549,14.432 0,13.884 0,13.209 L 0,0 z"
+             style="fill:#45f12c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path5262-3-1-0-5"
+             inkscape:connector-curvature="0" />
+        </g>
+        <path
+           d="m 551.86377,249.18784 -2.88177,2.34039 -2.88119,-2.34039 0,15.8379 c 0,0.81553 0.66085,1.47696 1.4758,1.47696 l 2.81078,0 c 0.81495,0 1.47638,-0.66143 1.47638,-1.47696 l 0,-15.8379 z"
+           style="fill:#45f12c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path8064-3-2-7-2"
+           inkscape:connector-curvature="0" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path7068-6-3-9-1"
+           style="fill:none;stroke:#45f12c;stroke-width:3.46297145;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           d="m 558.24141,273.95063 c -5.02766,5.20716 -13.31051,5.35145 -18.51824,0.32322" />
+        <path
+           d="m 555.63627,268.78891 c -3.62919,3.75905 -9.60859,3.86294 -13.36822,0.23317"
+           style="fill:none;stroke:#45f12c;stroke-width:3.46297145;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path7072-0-3-4-0"
+           inkscape:connector-curvature="0" />
+        <g
+           style="fill:#45f12c;fill-opacity:1"
+           id="g7074-7-5-2-2"
+           transform="matrix(0.72271833,0,0,0.70559411,552.91074,264.04457)">
+          <path
+             d="m 0,0 c 0,-3.121 -2.531,-5.651 -5.65,-5.651 -3.121,0 -5.651,2.53 -5.651,5.651 0,3.121 2.53,5.65 5.651,5.65 C -2.531,5.65 0,3.121 0,0"
+             style="fill:#45f12c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path7076-8-8-0-0"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+      <path
+         transform="translate(281.98442,1370.3658)"
+         d="m 830.43967,267.30984 c 0,44.51079 -36.08312,80.59392 -80.59391,80.59392 -44.51078,0 -80.59391,-36.08313 -80.59391,-80.59392 0,-44.51078 36.08313,-80.59391 80.59391,-80.59391 44.51079,0 80.59391,36.08313 80.59391,80.59391 z"
+         sodipodi:ry="80.59391"
+         sodipodi:rx="80.59391"
+         sodipodi:cy="267.30984"
+         sodipodi:cx="749.84576"
+         id="path4061"
+         style="fill:none;stroke:#14753b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:12, 12;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:7.97021294px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#5a534c;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="543.16113"
+       y="557.92285"
+       id="text4017-1-4-9-22-6-2-2-8-6-0-1-7-7-8-7-1-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/guthemberg/Documents/playground/job/research/phd/writtings/1st_technical_report/presentation/img/vnet.png"
+       inkscape:export-xdpi="240.67291"
+       inkscape:export-ydpi="240.67291"><tspan
+         sodipodi:role="line"
+         x="543.16113"
+         y="557.92285"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan5809-4-1">storage</tspan><tspan
+         sodipodi:role="line"
+         x="543.16113"
+         y="572.92285"
+         style="font-size:12px;text-align:center;text-anchor:middle;fill:#868483;fill-opacity:1"
+         id="tspan7515">domain</tspan></text>
+  </g>
+</svg>

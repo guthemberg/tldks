@@ -1,0 +1,94 @@
+\section{Evaluation}
+\label{sec:evaluation}
+
+In this section, we analyse the impact of predictions on Internet videos replication. Our analyses focus on evaluating three main metrics: aggregate bandwidth, storage usage, and number of SLA violations. First we introduce the scenario and the replication schemes evaluated in this work. Then we present our most important finds.
+
+\subsection{Evaluation scenario and replication schemes.}
+\label{subsec:evaluation,scenario}
+
+We evaluate this work with Caju, a tool which models a content distribution system for
+edge networks on top of PeerSim. In Caju, service provider infrastructure is organized in federated storage domains, as depicted in Figure~\ref{fig:evaluation_scenario}. A
+storage domain is a logical entity that aggregates a set of storage
+elements that are located close to each order, e.g. a set of devices that are connected
+to the same digital subscriber line access multiplexer (DSLAM). There are two different classes of devices: (i) operator-edge, furnished by storage operators, e.g. small-sized
+datacenters, represented by big nodes up on Figure~\ref{fig:evaluation_scenario}, and (ii) consumer-edge, the small ones, whose consumers are connected to, such as
+set-top boxes. 
+
+System usage is straightforward, costumers can perform either PUTs or GETs calls. For PUTs, given a fixed number of initial replicas $n$, we simulate the objects insertion and a chain of object-replication of $n-1$ stages. GETs are randomly scheduled to provide load balancing. Each request is served by at most $R$ nodes with equal load. The actual number of sources is $r=min(n,R)$.A more detailed description of Caju design is available in \cite{silvestre_aren_icpads12}.
+
+\begin{figure}
+  \centering
+     \includegraphics[width=.75\textwidth]{inputs/img/evaluation_scenario}
+  \caption{Evaluation scenario}
+  \label{fig:evaluation_scenario}
+\end{figure}
+
+Our evaluation scenario (Figure~\ref{fig:evaluation_scenario}) includes 4002 nodes, arranged across two storage domains. There are one operator-edge device and 2000 consumer-edge devices per storage domain. Storage and network capacities differ accordingly to the class of device. Operator-edge devices have 20TB of storage capacity and full-duplex access link of 4Gbps. Consumer-edge devices contribute 200GB each, equipped with 100Mbps full-duplex links. Note that the two operator-edge devices contribute with a small fraction of the total amount of overall edge resources, namely additional 10\% of storage capacity and only 2\% of the overall network capacity. This draws our attention to the performance of replication schemes and resource allocations issues towards consumer-edge devices. We assume that edge networks are connected to the operator network that ensures inter-storage domain connectivity. For replication, we assume that only 1\% of the storage capacity of consumer-edge devices, i.e. 2GB, is available for caching additional replicas. 
+
+We evaluate three replication schemes.
+
+{\bf Non-collaborative LRU caching} Simple adaptive replication schemes based on non-collaborative caching, such as those that implements Least Recent Used algorithm, are easy to implement and deploy. In our evaluation, a new replica is created whenever a client, connected to a operator-edge device, performs a GET to any object. LRU replacement is enforced regarding a static percentage of the local storage capacity for caching. Request scheduling is quite similar to that of uniform approach. Initial placement requires two replicas in different devices classes of the same storage domain.
+
+{\bf AREN} That stands for Adaptive Replication for Edge Networks, is a replication scheme which relies on bandwidth reservation and collaborative caching to provide an adaptive number of replicas for popular
+content. Assuming there exists a logically centralized CDN coordinator, AREN tracks the aggregate bandwidth demand per replica set, and decides if it is worth creating a new replica in caching of the destination node. The coordinator computes the utility of a new replica based on thresholds. Replica utility measures the benefit of creating replicas with regard to popularity and current bandwidth consumption of an object. It also determines if replicas are redundant and must be deleted. For scheduling on edge networks, AREN enforces two simple policies: \emph{divide-and-conquer} and \emph{nearest source selection}. Further details about AREN, including scheduling policies, are available on our previous work\cite{silvestre_aren_icpads12}.
+
+{\bf Hermes} This is the main contribution of this work. It provides a proper, adaptive replication scheme for Internet videos that enforces strict SLA contracts through accurate predictions. More interestingly, it does not requires any modification of the network stack, as most of deadline-aware approaches do. Hermes uses a supervised learning model for tracking the dynamics of growth curves of Internet videos. For learning the profiles of popular Internet videos, we feed our model with near-optimal AREN resource provision for YouTube videos. This allows Hermes to identify popular videos from lightweight measurements of their request arrival process. Since Hermes predicts accurately requests for popular content, we argue the enforcement of simple replication policies is enough to prevent both violations and waste of resources. To evaluate this idea, we define $d$ as the number of additional replicas to cope with the popularity growths. Therefore, whenever a video is classified as popular, new $d$-replicas are created using a operator-edge device. Similarly, Hermes identifies non-popular videos and adapts replication accordingly. Hermes enforces the same AREN's policies for requests scheduling on edge resources.
+
+\subsection{Performance evaluation}
+\label{subsec:performance_evaluation}
+
+\begin{figure}[htbp]
+  \begin{minipage}[t]{0.5\linewidth}
+  %\centering
+    \includegraphics[width=0.98\textwidth]{inputs/img/binary_classification_roc_curve}
+    \caption{ROC curve for popularity classifier with four different kernels.}
+    \label{fig:roc_curve_popularity}
+  \end{minipage}
+  \hspace{0.1cm}
+  \begin{minipage}[t]{0.5\linewidth}
+  %\centering
+    \includegraphics[width=0.9\textwidth]{inputs/img/replication_kernels_bars}
+    \caption{Precision with different kernels for predicting replication.}
+    \label{fig:precision_replication}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[t]{0.5\linewidth}
+    \includegraphics[width=.8\textwidth]{inputs/img/replication_d_validation}
+    \caption{Evaluation of $d$ for adjusting replication degree.}
+    \label{fig:replication_degree}
+  \end{minipage}
+\end{figure}
+
+
+\begin{figure}[htbp]
+  \begin{minipage}[t]{0.5\linewidth}
+  %\centering
+     \includegraphics[width=.9\textwidth]{inputs/img/cache_usage}
+  \caption{Cache usage for replication.}
+  \label{fig:cache_usage_for_replication}
+  \end{minipage}
+  \hspace{0.1cm}
+  \begin{minipage}[t]{0.5\linewidth}
+  %\centering
+     \includegraphics[width=.9\textwidth]{inputs/img/violations}
+  \caption{SLA violations. Vertical lines show when happened the first access to three videos with the worst content provision using LRU caching.}
+  \label{fig:violations}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[htbp]
+  \begin{minipage}[t]{0.5\linewidth}
+     \includegraphics[width=.9\textwidth]{inputs/img/ecdf_replicas}
+  \caption{Maximum number of replicas for the 1\% most replicated videos.}
+  \label{fig:cache_usage_for_replication}
+  \end{minipage}
+  \hspace{0.1cm}
+  \begin{minipage}[t]{0.5\linewidth}
+     \includegraphics[width=.9\textwidth]{inputs/img/ecdf_agg_bwd_under_heavy_load}
+  \caption{Bitrate for viewers of the three most popular videos under heavy load.}
+  \label{fig:violations}
+  \end{minipage}
+\end{figure}
