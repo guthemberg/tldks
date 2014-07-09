@@ -168,18 +168,25 @@
 %38-40 rue du G\'en\'eral Leclerc, 92130 Issy -- France.}
 %}
 
-\author{Guthemberg Silvestre\inst{2} \and David Buffoni\inst{1} \and  Karine Pires\inst{1} \and S\'{e}bastien Monnet\inst{1} and Pierre Sens\inst{1}}
+\author{Guthemberg Silvestre\inst{1} \and David Buffoni\inst{2} \and  Karine Pires\inst{2} \and S\'{e}bastien Monnet\inst{2} \and Pierre Sens\inst{2}}
 
-\institute{LIP6/UPMC/CNRS/INRIA \and LAAS/CNRS}
+\institute{CNRS, LAAS, 7 avenue du colonel Roche, F-31400 Toulouse, France \
+\email{gdasilva@laas.fr} \
+ \and UPMC Sorbonne Universit\'es, LIP6, CNRS, INRIA, 4 Place Jussieu, Paris, France \
+\email{\{david.buffoni,karine.pires,sebastien.monnet,pierre.sens\}@lip6.fr} }
 
 \maketitle
 
 \begin{abstract}
 
 %specific ICNP note: abstract is limited to 200 words.
-Streaming video consumption has risen sharply over the last years. Not only has that reshaped the Internet traffic, it has also changed the manner of watching videos. Users are progressively moving from the old-fashioned scheduled television to video-on-demand (VoD) services. As broadcasting future seems to be online, customers have become more sensitive to VoD quality, expecting ever-higher bitrates and lower rebuffering. In this context, average bitrate is a key QoS metric. Therefore, content delivery networks (CDNs) and content providers must be committed to enforcing average bitrate through SLA contracts. Adaptive content replication is a promising technique towards this goal. However, this still offers a major challenge for CDN providers, particularly as they aim to avoid waste of resources. In this work, we introduce WiseReplica, an adaptive replication scheme for peer-assisted VoD systems that enforces average bitrate for Internet videos. Using an accurate machine-learned ranking, WiseReplica saves storage and bandwidth from the vast majority of non-popular contents for the most wanted videos. Simulations using YouTube traces suggest our approach meets users expectations efficiently.  Compared to caching, WiseReplica reduces the replication degree for the hottest videos by two orders of magnitude, and under heavy load, it increases average bitrate by roughly 85\%.
+Streaming video consumption has risen sharply over the last years. Not only has that reshaped the Internet traffic, it has also changed the manner of watching videos. Users are progressively moving from the old-fashioned scheduled television to video-on-demand (VoD) services. As broadcasting future seems to be online, customers have become more sensitive to VoD quality, expecting ever-higher bitrates and lower rebuffering. In this context, average bitrate is a key quality of service (QoS) metric. Therefore, content delivery networks (CDNs) and content providers must be committed to enforcing average bitrate through service-level agreement (SLA) contracts. Adaptive content replication is a promising technique towards this goal. However, this still offers a major challenge for CDN providers, particularly as they aim to avoid waste of resources. In this work, we introduce WiseReplica, an adaptive replication scheme for peer-assisted VoD systems that enforces the average bitrate for Internet videos. Using an accurate machine-learned ranking, WiseReplica saves storage and bandwidth from the vast majority of non-popular contents for the most watched videos. Simulations using YouTube traces suggest our approach meets users expectations efficiently.  Compared to caching, WiseReplica reduces the required replication degree for the most-watched videos by two orders of magnitude, and under heavy load, it increases the average bitrate by roughly 85\%.
 
 \end{abstract}
+
+\begin{keywords} 
+Peer-to-peer (P2P), video on-demand (VoD), caching, replication, service-level agreement (SLA), prediction.
+\end{keywords}
 
 %\begin{IEEEkeywords}
 %Peer-to-peer, video on-demand (VoD), caching, replication, SLA, prediction.

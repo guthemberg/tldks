@@ -13,17 +13,14 @@ User Experience}
 
 Many studies have shown that quality of user experience while watching
 online videos is related to the good quality of content transmission.
-Still being an open issue, the community presented many strategies to
-cope with the video content availability and its distribution.  The
-majority of the studies in the field are focused on Youtube, being
+They presented many strategies to
+enhance the video content availability and its distribution.  Most of these studies analyse in the field are focused on Youtube, being
 this the major player of video content
-distribution~\cite{youtube_wsdm_2011, Adhikari_infocom_2012,
-Brodersen_www_2012, Braun_noms_2012}. These studies vary
-from analyzes of crawled data from Youtube APIs to comparisons of
+distribution~\cite{youtube_wsdm_2011,Adhikari_infocom_2012,Brodersen_www_2012,Braun_noms_2012}. These studies include the analysis of crawled data from Youtube APIs and comparisons of
 caching strategies from collected data of users' point of view (HTTP
 logs from ISP or local networks).
 
-Dobrian \emph{et al.}~\cite{Dobrian_sigcomm_2011} study have shown the
+Dobrian \emph{et al.}~\cite{Dobrian_sigcomm_2011} study has shown the
 correlation between the user engagement and the video quality, being
 the \emph{Buffering Ratio} (fraction of the total session time spent
 in buffering) and \emph{Rendering Rate} (frames per second) the most
@@ -34,30 +31,29 @@ avoidance of SLAs violations, which minimizes buffering ratio,
 confirming the main metric of  evaluation in our work. 
 
 Furthermore,  Finamore \emph{et al.}~\cite{Finamore_imc_2011} stated
-that download  bitrate of the video has a fundamental role in video
+that the download  bitrate of the video plays a fundamental role in video
 playback quality.  They measured the smoothness of the playback by the
 bitrate ratio,  defined as the ratio between the average session
-download bitrate and  the video encoding bitrate. The consideration of
-different bitrates  in the dataset used as input for our method agrees
-with the importance  of the rendering rate metric in user engagement 
+download bitrate and  the video encoding bitrate. Considering
+different bitrates in the input dataset is a key aspect of the rendering rate metric in user engagement 
 and playback quality.
 
-Another important concern in this work was to provide a SLA-based solution with
-the minimum constrains regarding deployment. Recent studies\cite{d3_sigcomm2011, dctcp_sigcomm_2010} presented
+Another important concern in studying the availability of Internet videos was to provide a SLA-based solution with
+the minimum constrains regarding deployment. However, recent studies\cite{d3_sigcomm2011,dctcp_sigcomm_2010} 
 are based in substantial changes in the normally used stack of
 protocols and network infra-structure and they become hard to be
 considered as a feasible solution. Our solution takes in account a
 well-know and largely used infra-structure and have no changes in the
-stack protocol.
+stack protocol. Despite all these research efforts, enforcing video availability in large peer-assisted VoD systems remains a challenging issue.
 
 \subsection{On the Track of YouTube Popularity Growth Curves and High Quality Videos}
 \label{subsec:motivation_youtube_traces}
 
 A fair reproduction of user interactions to Internet videos is essential to evaluate peer-assisted VoD systems properly. Hence, we study in this work a workload that combines YouTube traces\cite{youtube_wsdm_2011} to well-known videos{'} access patterns \cite{popularity_prediction_2010}. We are particularly interested in reproducing realistic popularity growth curves, considering advanced coding setting and common VoD demand patterns.
 
-Figueiredo \emph{et al.} \cite{youtube_wsdm_2011} collected and characterized the growth patterns of YouTube videos, whose datasets are currently available online \footnote{The Tube over Time: Characterizing Popularity Growth of YouTube Videos. http://www.vod.dcc.ufmg.br/traces/youtime/data/, January 2013.}. They analysed three types of YouTube videos sets: videos that appear on YouTube top list, videos that were banned from YouTube due to copyrights violations, and videos that were randomly selected through API calls. They crawled once a number of videos' daily features. For each video, there are up to 100 daily measurements, or daily available samples, per feature. In this work, we are mostly interested in the measurements of \emph{view data} feature, that depicts the popularity growth curve of a video through a array of cumulative number of daily views ranging from 0 to the total number of views.
+We study the data crawled by Figueiredo \emph{et al.} \cite{youtube_wsdm_2011}, whose datasets are currently available online \footnote{The Tube over Time: Characterizing Popularity Growth of YouTube Videos. http://www.vod.dcc.ufmg.br/traces/youtime/data/, January 2013.}. The dataset allows us to characterize the growth patterns of YouTube videos. In particular, they analysed three types of YouTube videos sets: videos that appear on YouTube top list, videos that were banned from YouTube due to copyrights violations, and videos that were randomly selected through API calls. They crawled once a number of videos' daily features. For each video, there are up to 100 daily measurements, or daily available samples, per feature. In this work, we are mostly interested in the measurements of \emph{view data} feature, that depicts the popularity growth curve of a video through a array of cumulative number of daily views ranging from 0 to the total number of views.
 
-In order to reproduce realistic, high quality videos encodings, we consider the YouTuve advanced encoding settings\footnote{Advanced encoding settings for YouTube videos. http://support.google.com/youtube/bin/answer.py?hl=en-GB\&answer=1722171, March 2013.}. Table~\ref{tab:youtube_encodings} depicts the set of high definition (HD) video encodings that we use in this work. 
+In order to reproduce realistic, high quality videos encodings, we consider the YouTuve advanced encoding settings\footnote{Advanced encoding settings for YouTube videos. http://support.google.com/youtube/bin/answer.py?hl=en-GB\&answer=1722171, June 2014.}. Table~\ref{tab:youtube_encodings} depicts the set of high definition (HD) video encodings that we use in this work. 
 
 \begin{table}
   \label{tab:motivation_advanced_encodings}
@@ -107,6 +103,6 @@ In order to meet increasing consumers' expectations on Internet videos, a \emph{
 		\item  It must prevent rebuffering of VoD streaming through a self-adaptive, easy-to-deploy technique.
 \end{enumerate}
 
-Our simulations suggest that meeting consumers' expectations in terms of average bitrate is a difficult task, specially under heavy load. State-of-the-art approaches fail to handle these challenges mostly because they are not able (i) to capture VoD demand, and (ii) to define a metric to measure consumers' expectations. WiseReplica copes with these issues by inferring users' expectations for videos and prediction the amount of resources to fulfil the demand in a self-adaptive way. Our finds show that this approach produces a good balance between resource allocation and users' satisfaction.
+Our simulations suggest that meeting consumers' expectations in terms of average bitrate is a difficult task, specially under heavy load. State-of-the-art approaches fail to handle these challenges mostly because they are not able (i) to capture VoD demand, and (ii) to define a metric to measure consumers' expectations. WiseReplica copes with these issues by inferring users' expectations for videos and prediction the amount of resources to fulfil the demand in a self-adaptive way. Our findings show that this approach produces a good balance between resource allocation and users' satisfaction.
 
 %current approaches particularly fail in addressing properlly two main issues: how to capture Internet videos hotness accurately and provide resource allocation schemes accordingly.
