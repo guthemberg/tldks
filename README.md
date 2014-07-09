@@ -3,12 +3,14 @@ tldks
 
 Transactions on Large-Scale Data and Knowledge-Centered Systems TLDKS
 
-Deadline: May 30th, 2014
-Notification: July 20th, 2014
+Deadline: July 31, 2014
+Notification: September 15, 2014
 
-Note: The length of submitted manuscripts should not exceed 30 pages.
+Note: The length of submitted manuscripts should not exceed 25 pages.
 
-Registration: http://confdriver.ifs.tuwien.ac.at/tldks 
+CFP page: http://tldks.faw.at/calls/
+
+Registration: http://confdriver.ifs.tuwien.ac.at/tldks/home/480 
 
 Other links: 
 http://tldks.faw.at
