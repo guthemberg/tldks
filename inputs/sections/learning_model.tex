@@ -7,7 +7,7 @@ We designed a prediction model for ranking Internet videos in order of demand. I
 \label{subsec:learning_model_overview}
 
 Statistical learning is about learning from seen data in order to predict unseen data with minimal error. Data comprise inputs $\inpseq$ represented by a vector with a fixed
-  number of dimensions $p$ ($\inpseq \in \inpspace \subset \Re^p$) from the input space $\mathcal{X}$. In our problem, $\inpseq$ is a video. 
+  number of dimensions $p$ ($\inpseq \in \inpspace \subset \Re^p$) from the input space $\mathcal{X}$. In our problem, $\inpseq$ is a video, represented by a vector of measurements from video sessions' activity.
 
 In supervised learning, each input measurement is coupled with a $\rel$, a label selected by an oracle, from the output space $\mathcal{Y}$. To learn, we take $N$ pairs ($\inpseq,\rel$) drawn \emph{independently and identically distributed} (i.i.d.) from a fixed but unknown joint probability density $\distspace$. This is true  for both training and testing datasets. For instance, we consider the training dataset  $\trset = \{\inpseq_i,\rel_i\}_{i=1}^N$ of $N$ pairs ($\inpseq,\rel$). Using this dataset, the supervised learning algorithm searches for a function $\fscore$ : $\mathcal{X} \rightarrow \Re$  in a fixed function class $\fspace$. State-of-the-art algorithms, such as \emph{support vector machines} (\textsc{SVM}) \cite{svm_1995} or \emph{ensemble methods} \cite{elements_of_statistical_learning_2001}, aim to find $\fscore^\star$ in $\fspace$ with the lowest empirical risk defined as:
 \begin{equation}
@@ -16,9 +16,9 @@ In supervised learning, each input measurement is coupled with a $\rel$, a label
 \end{equation}
 
 \noindent
-where $\qm_{emp}(\fscore) = \frac{1}{N} \sum_{i=1}^N \indic{\fscore(\inpseq) \neq \lab_i}$ is computed over the training set, and $\indic{.}$ is the indicator function which returns $1$ if the predicate $\{.\}$ is true and $0$ otherwise. In other terms, $\qm_{emp}$ is a quality measure relating the label to the prediction provided by the function $\fscore$.
+where $\qm_{emp}(\fscore) = \frac{1}{N} \sum_{i=1}^N \indic{\fscore(\inpseq) \neq \lab_i}$ is computed over the training set, and $\indic{.}$ is the indicator function which returns $1$ if the predicate $\{.\}$ is true and $0$ otherwise. In other terms, $\qm_{emp}$ is a quality measure relating the label to the prediction provided by the function $\fscore$ on the training dataset $S$.
 
-To model our prediction problem, we use a statistical learning approach called learning-to-rank. This approach has been a hot topic in Machine Learning community for the last 10 years. It combines properties of two well-known other approaches: regression, where $\rel \in \mathcal{Y}  \subset \Re$; classification where $\rel \in \mathcal{Y}  \subset \{0,1, ..., KÊ\}$ with $K \geq 1$. In learning-to-rank approach, $\rel$ gives an indication on the target order (formally represented by a permutation $\sigma$). 
+To model our prediction problem, we use a statistical learning approach called learning-to-rank. This approach has been a hot topic in Machine Learning community for the last 10 years. It combines properties of two well-known other approaches: regression, where $\rel \in \mathcal{Y}  \subset \Re$; classification where $\rel \in \mathcal{Y}  \subset \{0,1, ..., KÊ\}$ with $K \geq 1$. In learning-to-rank approach, $\rel$ gives an indication on the target order (formally represented by a permutation $\sigma \in \Sigma$). 
 
 %\subsection{Measurements and Dataset for Predictions}
 %\label{subsec:motivation_metrics}
@@ -43,13 +43,15 @@ The main purpose of our learning model is to capture popularity growth dynamics 
 Given an i.i.d. sample $(\inpseq,\rel)$ such as described in Subsection~\ref{subsec:learning_model_overview}, we model inputs and outputs as follows. 
 
 \noindent
-\textbf{Inputs}. We represent the input space $\inpseq$ is a video described as 10 lightweight measurements from the request arrival process.  These measurements are video size, network availability, network usage (load), current number of viewers and replicas, inter-arrival time between requests (delta), aggregate number of views, mean of time between requests (mtbr), life time, and average bitrate. We compute averages and means from up to the five last requests. Our goal is to gather as much information about users' interactions as possible in an easy manner to make accurate predictions about the ranking of videos.
+\textbf{Inputs}. We represent the input space $\inpseq$ is a video described as 10 lightweight measurements from the request arrival process.  These measurements are video size, network availability, network usage (load), current number of viewers and replicas, inter-arrival time between requests (delta), aggregate number of views, mean of time between requests (mtbr), life time, and average bitrate. We compute averages and means from up to the five last requests. Our goal is to gather as much information about users' interactions as possible in an easy manner to make accurate predictions about the ranking of videos. To extend our model, one can easily add further features or measurements such as geographical location, social network interactions data, buffering ratio, rate of buffering events, session join time, rendering quality, rate of bitrate switch, \emph{etc.}
 
 \noindent
 \textbf{Outputs}. The supervision $\rel$ associated to each input video $\inpseq$ is based on four possible ordered values which gives an indication for the final target ranking. In our model, $\mathcal{Y} \in \{0,1,2,3\}$, whose labels are $\{$\emph{non-popular}, \emph{popular}, \emph{very popular}, \emph{viral}$\}$ respectively. It represents a natural ranking for Internet videos. Using this ranking model, we intend to provide a measure of video demand, which is closely related not only to the popularity, but also to the consumption of system resources.
 
-Finally, the learning-to-rank module finds a function $\fscore$ from equation \eqref{eq:erm} with the constraint of maintaining the prediction order: $\forall i,j, i \neq j, \rel_i > \rel_j$ then $\fscore(\inpseq_i) > \fscore(\inpseq_j)$. %as explained in \cite{buffoni-11}. %UNCOMMENT THIS WHEN THE PAPER WILL BE ACCEPTED
-In that case, theoretical performance guarantees are provided. Practically, the use of the mean square error $(\rel - \fscore(\inpseq))^2$ instead of the indicator function  $\indic{.}$ (which is hard to optimize because it is non-differentiable) allows us to ensure an optimal learning-to-rank algorithm.
+Finally, the learning-to-rank module finds a function $\fscore$ from equation \eqref{eq:erm} with the constraint of maintaining the prediction order: $\forall i,j, i \neq j, \rel_i > \rel_j$ then $\fscore(\inpseq_i) > \fscore(\inpseq_j)$ explained in \cite{Buffoni11}. 
+In that case, theoretical performance guarantees are provided. Practically, the use of the mean square error $(\rel - \fscore(\inpseq))^2$ instead of the indicator function  $\indic{.}$ (which is hard to optimize because it is non-differentiable) allows us to ensure a calibrated learning to rank algorithm. 
+A calibrated algorithm means there is a theoretical link between the approximation of 
+the empirical risk, that is easier to optimize, and its non-differentiable version~\cite{Zhang03,Steinwart07,Buffoni11,Calauzenes12}.
 
 \subsection{Framework for Learning and Predicting, and Implementation}
 \label{subsec:framework}
