@@ -1,0 +1,60 @@
+Reviews TLDKS SI
+
+Review 1:
+----------
+streamed videos on Internet. The proposed technique depends on learning
+the ranking of each video based on several collected measurements, and
+adaptively adjusting the replication factor of this video. For the
+learning phase, the technique uses statistical learning approaches and
+machine learning algorithms to assign each video a rank between 0 to 3.
+For the adjusting the replication factor, the authors have proposed the
+WiseReplica technique. The technique is evaluated experimentally and
+compared with other techniques. 2) The paper addresses an important
+application that is increasingly getting popular, which is video-on-demand
+and how to ensure high-quality and satisfactory delivery. The authors made
+good arguments and motivated the paper well in the Introduction section.
+3) It is not clear why the chosen QoS metric, which is “the average
+bitrate” is a good one. In many applications, what need to be guaranteed
+is not the average, but the minimum bitrate. Otherwise, how do you ensure
+that rebuffering will not happen? In fact, the average bitrate may
+encounter large fluctuation in the bitrate while the overall average is
+good. I think the authors need to argue why this metric makes sense. 4) It
+seems the ranking of a video may change only when a new request comes
+(Section 4.2). If that is the case, then the proposed technique can be
+missing many several points at which adapting the replication can be
+required, e.g., what if one link or sub-network becomes very slow, does
+not this warrant revising your replication decisions? I suggest that the
+authors should clearly indicate what are the triggering events for
+adjusting the replication. 5) In the Experiment section, it would have
+been better if the authors can study the fluctuations that may happen to
+the underlying network, e.g., some sites may get slow or down, some
+network links may become overloaded, etc. The performance of WiseReplica
+should be studied under variations of all of these factors.
+
+Review 2:
+----------
+The paper proposes WiseReplica which is an adaptive replication scheme for
+hybrid VOD systems (containing infrastructure + edge network). It takes
+into account the video bitrate as QoS metric. First, the popularity (rank)
+of a video clip is predicted and then the replication degree is adjusted
+with the objective of reduces the number of replicas while meeting SLA
+constraints. Regarding the learning model, why it is better to formulate
+the problem as a ranking problem? Can you compare the accuracy of the
+prediction results to other alternatives, esp. classification since there
+are four output labels only. The paper compares multiple replication
+policies, but uses LRU for deletion. Given varying sizes and popularity, a
+better deletion policy may improve the performance. Greedy-Dual-Size can
+be an alternative. >> “data from simulations” >> “very accurate in
+predicting the ranking of Internet videos”. How is the ground truth
+established (and data labeled)? Since real traces are available, they
+should be used for learning and evaluating the predictions. >>”On the
+Track of YouTube Popularity Growth Curves and High Quality Videos” Do you
+the correlation? >>”ensure an optimal learning-to-rank algorithm.” The
+algorithm is optimal in which sense? Is there a proof? >> “A SLA violation
+happens whenever the system fails to enforce the minimal average bitrate
+for any viewer's request.” SLA violation should NOT be binary, it can be
+violated gracefully. A single frame that is skipped, or a short buffer
+underrun may not be noticed at all. SLA should be continuous curve for
+each playback. In figure 5, how is precision defined? What is recall in
+this context? The paper should add a symbol table. Typos: Quite a few, for
+example: YouTuve -> YouTube, “Prediction the amount” “logger simulations”
